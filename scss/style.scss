@@ -1,0 +1,140 @@
+$menuHeight: 65px+10px;
+@mixin transition {
+    transition-property: background-color opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#labirentAlanı {
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    top: $menuHeight;
+    opacity: 0;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.30);
+    margin: auto;
+
+    #labirentCanvas {
+        margin: 0;
+        display: block;
+        border: solid 1px black;
+    }
+}
+
+input,
+select {
+    @include transition;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.30);
+    height: 45px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    appearance: none;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.70);
+    }
+    &:active {
+        background-color: black;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.kullaniciSecimi {
+    display: inline-block;
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: "res/ucgen.png";
+        background-repeat: no-repeat;
+        background-position: 125px center;
+    }
+}
+
+#Mesaj-Kutusu {
+    visibility: hidden;
+    color: white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+    #mesaj {
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -150px;
+        margin-top: -150px;
+    }
+}
+
+#sayfa {
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+    #menu {
+        margin: auto;
+        padding: 10px;
+        height: 65px;
+        box-sizing: border-box;
+        h1 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 3.2rem;
+        }
+    }
+    #gorunum {
+        position: absolute;
+        top:65px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+           
+    }
+}
+
+.kenarlık{
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+
+
+
+

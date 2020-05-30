@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fare Kapanı</title>
+  
+      <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <html lang="tr">
+      
+<head>
+  <meta charset="utf-8">
+      <body>
+    <div id="sayfa">
+      <div id="Mesaj-Kutusu">
+        <div id="mesaj">
+          <h1>Tebrikler!</h1>
+          <p>Peyniri buldunuz.</p>
+          <p id="hamle"></p>
+          <input id="tmmBtn" type="button" onclick="gecisGorunurlugu('Mesaj-Kutusu')" value="Tamam" />
+        </div>
+      </div>
+      <div id="menu">
+        <div class="kullaniciSecimi">
+          <select id="zorlukSecimi">
+                    <option value="10">Kolay</option>
+                    <option value="15">Orta</option>
+                    <option value="25">Zor</option>
+                    <option value="38">Çok Zor</option>                                      
+                </select>
+        </div>
+        <input id="baslaBtn" type="button" onclick="labirentYapma()" value="Hadi Başla" />
+      </div>
+      <div id="gorunum">
+        <div id="labirentAlanı">
+          <canvas id="labirentCanvas" class="kenarlık" height="1100" width="1100"></canvas>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  </body>
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+</body>
+
+</html>
